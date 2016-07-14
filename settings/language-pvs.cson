@@ -1,0 +1,12 @@
+'.source.pvs':
+  'editor':
+    'commentStart': '% '
+    'foldEndPattern': '^\\s*(\\}|\\]|\\)|END)'
+    'increaseIndentPattern': '(?x)
+        \\{ [^}"\']* $
+      | \\[ [^\\]"\']* $
+      | \\( [^)"\']* $
+      '
+    'decreaseIndentPattern': '(?x)
+        ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\])]
+      '

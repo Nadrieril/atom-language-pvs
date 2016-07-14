@@ -1,0 +1,71 @@
+'scopeName': 'source.pvs'
+'fileTypes': [
+  'pvs'
+]
+'name': 'PVS'
+'patterns': [
+  {
+    'include': '#strings'
+  }
+  {
+    'include': '#comments'
+  }
+  {
+    'include': '#operators'
+  }
+  {
+    'include': '#numbers'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.pvs'
+    'match': '(TYPE|DATATYPE|BEGIN|END|THEORY|IMPORTING|LAMBDA|LET|IN)'
+  }
+]
+'repository':
+  'numbers':
+    'patterns': [
+      {
+        'match': '\\b[0-9]+\\b'
+        'captures':
+          '0':
+            'name': 'constant.numeric.pvs'
+      }
+    ]
+  'operators':
+    'patterns': [
+      {
+        'match': '!==|!=|<=|>=|===|==|<|>'
+        'name': 'keyword.operator.comparison.pvs'
+      }
+    ]
+  'strings':
+    'patterns': [
+      {
+        'begin': '"'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.pvs'
+        'end': '"'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.pvs'
+        'name': 'string.quoted.double.pvs'
+        'patterns': [
+          {
+            'match': '\\\\.'
+            'name': 'constant.character.escape.pvs'
+          }
+        ]
+      }
+    ]
+  'comments':
+    'patterns': [
+      {
+        'captures':
+          '0':
+            'name': 'comment.line.pvs'
+        'match': '%.*$\\n?'
+      }
+    ]

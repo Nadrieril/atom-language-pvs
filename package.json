@@ -1,0 +1,16 @@
+{
+  "name": "language-pvs",
+  "version": "0.0.0",
+  "description": "PVS language support in Atom",
+  "keywords": [
+  ],
+  "activationCommands": {
+  },
+  "repository": "https://github.com/nadrieril/language-pvs",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
