@@ -20,7 +20,7 @@
     'captures':
       '1':
         'name': 'keyword.pvs'
-    'match': '(TYPE|DATATYPE|BEGIN|END|THEORY|IMPORTING|LAMBDA|LET|IN)'
+    'match': '(TYPE|DATATYPE|BEGIN|END|THEORY|IMPORTING|LAMBDA|LET|IN|CONVERSION|IF|THEN|ELSE|ENDIF|MEASURE)'
   }
 ]
 'repository':
